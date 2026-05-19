@@ -3,6 +3,7 @@ import "./globals.css";
 import Navbar from "@/components/navbar/Navbar";
 import Hero from "@/components/hero/Hero";
 import Footer from "@/components/footer/Footer";
+import WhyChooseUs from "@/components/cards/WhyChooseUs";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,7 +34,12 @@ export default function RootLayout({ children }) {
         <section>
           <Hero />
         </section>
-        {children}
+        <section>
+          {children}
+        </section>
+        <section>
+          <WhyChooseUs />   
+        </section>
         <Footer />
         </body>
     </html>
