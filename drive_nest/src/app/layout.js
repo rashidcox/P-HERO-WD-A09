@@ -31,15 +31,7 @@ export default function RootLayout({ children }) {
         <nav>
           <Navbar />
         </nav>
-        <section>
-          <Hero />
-        </section>
-        <section>
           {children}
-        </section>
-        <section>
-          <WhyChooseUs />   
-        </section>
         <Footer />
         </body>
     </html>
