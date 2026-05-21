@@ -5,8 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "start": "node api/index.js"
   },
   "dependencies": {
     "@heroui/react": "^3.0.5",

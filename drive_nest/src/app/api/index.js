@@ -1,0 +1,15 @@
+const express = require("express");
+
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Hello from Express on Vercel!");
+});
+
+app.get("/about", (req, res) => {
+  res.json({
+    message: "About Route",
+  });
+});
+
+module.exports = app;
