@@ -1,4 +1,3 @@
-import { BsFeather } from "react-icons/bs";
 
 export const users = [
     { name: "John Doe", age: 30, city: "New York" },
@@ -13,7 +12,9 @@ export const users = [
     { name: "Jessica Taylor", age: 29, city: "Dallas" }
 ];
 
-export const cars = [
+
+
+export const all_cars = [
   {
     "id": 1,
     "name": "Toyota RAV4",
@@ -22,9 +23,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b",
       "https://images.unsplash.com/photo-1549399542-7e3f8b79c341",
-      "https://images.unsplash.com/photo-1555215695-3004980ad54e",
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+      "https://images.unsplash.com/photo-1555215695-3004980ad54e"
     ],
     "seats": 5,
     "transmission": "Automatic",
@@ -43,9 +42,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
       "https://images.unsplash.com/photo-1493238792000-8113da705763",
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a"
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023"
     ],
     "seats": 5,
     "transmission": "Automatic",
@@ -64,9 +61,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
       "https://images.unsplash.com/photo-1494976388531-d1058494cdd8",
-      "https://images.unsplash.com/photo-1549924231-f129b911e442",
-      "https://images.unsplash.com/photo-1511919884226-fd3cad34687c",
-      "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d"
+      "https://images.unsplash.com/photo-1549924231-f129b911e442"
     ],
     "seats": 7,
     "transmission": "Automatic",
@@ -85,9 +80,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1560958089-b8a1929cea89",
       "https://images.unsplash.com/photo-1619767886558-efdc259cde1a",
-      "https://images.unsplash.com/photo-1619767886558-efdc259cde1b",
-      "https://images.unsplash.com/photo-1619767886558-efdc259cde1c",
-      "https://images.unsplash.com/photo-1619767886558-efdc259cde1d"
+      "https://images.unsplash.com/photo-1619767886558-efdc259cde1b"
     ],
     "seats": 5,
     "transmission": "Automatic",
@@ -106,9 +99,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7",
       "https://images.unsplash.com/photo-1502877338535-766e1452684a",
-      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
-      "https://images.unsplash.com/photo-1493238792000-8113da705763"
+      "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023"
     ],
     "seats": 4,
     "transmission": "Manual",
@@ -127,9 +118,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1549924231-f129b911e442",
       "https://images.unsplash.com/photo-1494905998402-395d579af36f",
-      "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d",
-      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d"
+      "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d"
     ],
     "seats": 5,
     "transmission": "Automatic",
@@ -148,9 +137,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1502877338535-766e1452684a",
       "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
-      "https://images.unsplash.com/photo-1493238792000-8113da705763",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d"
     ],
     "seats": 4,
     "transmission": "Manual",
@@ -169,9 +156,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1511919884226-fd3cad34687c",
       "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d",
-      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8",
-      "https://images.unsplash.com/photo-1549924231-f129b911e442",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8"
     ],
     "seats": 5,
     "transmission": "Automatic",
@@ -190,9 +175,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6",
       "https://images.unsplash.com/photo-1494976388531-d1058494cdd8",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
-      "https://images.unsplash.com/photo-1493238792000-8113da705763",
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a"
+      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d"
     ],
     "seats": 7,
     "transmission": "Automatic",
@@ -211,9 +194,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d",
       "https://images.unsplash.com/photo-1493238792000-8113da705763",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d"
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70"
     ],
     "seats": 5,
     "transmission": "Automatic",
@@ -232,9 +213,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1494905998402-395d579af36f",
       "https://images.unsplash.com/photo-1549924231-f129b911e442",
-      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b",
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a",
-      "https://images.unsplash.com/photo-1493238792000-8113da705763"
+      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b"
     ],
     "seats": 5,
     "transmission": "Automatic",
@@ -253,9 +232,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1517524206127-48bbd363f3d7",
       "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
-      "https://images.unsplash.com/photo-1493238792000-8113da705763"
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70"
     ],
     "seats": 5,
     "transmission": "Manual",
@@ -274,9 +251,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1502161254066-6c74afbf07aa",
       "https://images.unsplash.com/photo-1494976388531-d1058494cdd8",
-      "https://images.unsplash.com/photo-1549924231-f129b911e442",
-      "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d",
-      "https://images.unsplash.com/photo-1493238792000-8113da705763"
+      "https://images.unsplash.com/photo-1549924231-f129b911e442"
     ],
     "seats": 5,
     "transmission": "Automatic",
@@ -295,9 +270,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee",
       "https://images.unsplash.com/photo-1493238792000-8113da705763",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d"
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70"
     ],
     "seats": 5,
     "transmission": "Automatic",
@@ -316,9 +289,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1502877338535-766e1452684a",
       "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
-      "https://images.unsplash.com/photo-1493238792000-8113da705763",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d"
     ],
     "seats": 5,
     "transmission": "Automatic",
@@ -337,9 +308,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1489824904134-891ab64532f1",
       "https://images.unsplash.com/photo-1493238792000-8113da705763",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d"
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70"
     ],
     "seats": 5,
     "transmission": "Automatic",
@@ -358,9 +327,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1514316454349-750a7fd3da3a",
       "https://images.unsplash.com/photo-1493238792000-8113da705763",
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d"
+      "https://images.unsplash.com/photo-1503376780353-7e6692767b70"
     ],
     "seats": 7,
     "transmission": "Automatic",
@@ -379,9 +346,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1493238792000-8113da705763",
       "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
-      "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d"
+      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7"
     ],
     "seats": 5,
     "transmission": "Automatic",
@@ -400,9 +365,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1511919884226-fd3cad34687c",
       "https://images.unsplash.com/photo-1502161254066-6c74afbf07aa",
-      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8",
-      "https://images.unsplash.com/photo-1549924231-f129b911e442",
-      "https://images.unsplash.com/photo-1503736334956-4c8f8e92946d"
+      "https://images.unsplash.com/photo-1494976388531-d1058494cdd8"
     ],
     "seats": 5,
     "transmission": "Automatic",
@@ -421,9 +384,7 @@ export const cars = [
     "images": [
       "https://images.unsplash.com/photo-1503376780353-7e6692767b70",
       "https://images.unsplash.com/photo-1493238792000-8113da705763",
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a",
-      "https://images.unsplash.com/photo-1552519507-da3b142c6e3d",
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7"
+      "https://images.unsplash.com/photo-1502877338535-766e1452684a"
     ],
     "seats": 5,
     "transmission": "Manual",
@@ -434,4 +395,4 @@ export const cars = [
     "description": "Sporty hatchback.",
     "features": ["Digital cockpit", "Sport seats", "CarPlay", "Adaptive suspension", "Turbo"]
   }
-];
+]

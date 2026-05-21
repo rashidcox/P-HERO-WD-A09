@@ -1,6 +1,9 @@
 
 
+import { all_cars } from "@/lib/data";
+import { getFeaturedCars } from "@/lib/featureCars";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 import {
   FaGasPump,
@@ -10,60 +13,7 @@ import {
   FaMapMarkerAlt,
 } from "react-icons/fa";
 
-const cars = [
-  {
-    id: 1,
-    name: "Toyota RAV4",
-    type: "SUV",
-    price: 60,
-    image:
-      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=1200&auto=format&fit=crop",
-    seats: 5,
-    transmission: "Automatic",
-    fuel: "Petrol",
-    location: "New York, USA",
-  },
-
-  {
-    id: 2,
-    name: "Honda Accord",
-    type: "Sedan",
-    price: 50,
-    image:
-      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1200&auto=format&fit=crop",
-    seats: 5,
-    transmission: "Automatic",
-    fuel: "Petrol",
-    location: "Los Angeles, USA",
-  },
-
-  {
-    id: 3,
-    name: "BMW 5 Series",
-    type: "Luxury",
-    price: 120,
-    image:
-      "https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=1200&auto=format&fit=crop",
-    seats: 5,
-    transmission: "Automatic",
-    fuel: "Petrol",
-    location: "Chicago, USA",
-  },
-
-  {
-    id: 4,
-    name: "Hyundai i20",
-    type: "Hatchback",
-    price: 35,
-    image:
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop",
-    seats: 4,
-    transmission: "Manual",
-    fuel: "Petrol",
-    location: "Miami, USA",
-  },
-];
-
+const cars = getFeaturedCars(all_cars, 4);
 const AvailableCars = () => {
   return (
     <section className="py-16 bg-gray-50">
@@ -98,7 +48,7 @@ const AvailableCars = () => {
               {/* Image */}
               <div className="relative">
                 <Image 
-                  src={car.image}
+                  src={car.images[0]}
                   alt={car.name}
                   width={500}
                   height={500}
@@ -159,9 +109,11 @@ const AvailableCars = () => {
                 </div>
 
                 {/* Button */}
+                <Link href={`/cars/${car.id}`}>
                 <button className="w-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition py-3 rounded-xl font-medium">
                   View Details
                 </button>
+                </Link>
               </div>
             </div>
           ))}

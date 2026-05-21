@@ -1,6 +1,8 @@
 
 "use client";
+import { all_cars } from "@/lib/data";
 import Image from "next/image";
+import Link from "next/link";
 import React, { useState } from "react";
 import {
   FaSearch,
@@ -12,90 +14,12 @@ import {
   FaFilter,
 } from "react-icons/fa";
 
-const cars = [
-  {
-    id: 1,
-    name: "Toyota RAV4",
-    type: "SUV",
-    price: 60,
-    image:
-      "https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?q=80&w=1200&auto=format&fit=crop",
-    seats: 5,
-    transmission: "Automatic",
-    fuel: "Petrol",
-    location: "New York",
-  },
 
-  {
-    id: 2,
-    name: "BMW X5",
-    type: "Luxury",
-    price: 120,
-    image:
-      "https://images.unsplash.com/photo-1555215695-3004980ad54e?q=80&w=1200&auto=format&fit=crop",
-    seats: 5,
-    transmission: "Automatic",
-    fuel: "Diesel",
-    location: "California",
-  },
-
-  {
-    id: 3,
-    name: "Honda Civic",
-    type: "Sedan",
-    price: 45,
-    image:
-      "https://images.unsplash.com/photo-1549399542-7e3f8b79c341?q=80&w=1200&auto=format&fit=crop",
-    seats: 5,
-    transmission: "Manual",
-    fuel: "Petrol",
-    location: "Chicago",
-  },
-
-  {
-    id: 4,
-    name: "Hyundai i20",
-    type: "Hatchback",
-    price: 35,
-    image:
-      "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=1200&auto=format&fit=crop",
-    seats: 4,
-    transmission: "Automatic",
-    fuel: "Petrol",
-    location: "Miami",
-  },
-
-  {
-    id: 5,
-    name: "Mercedes C-Class",
-    type: "Luxury",
-    price: 140,
-    image:
-      "https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=1200&auto=format&fit=crop",
-    seats: 5,
-    transmission: "Automatic",
-    fuel: "Hybrid",
-    location: "Texas",
-  },
-
-  {
-    id: 6,
-    name: "Ford Explorer",
-    type: "SUV",
-    price: 75,
-    image:
-      "https://images.unsplash.com/photo-1502877338535-766e1452684a?q=80&w=1200&auto=format&fit=crop",
-    seats: 7,
-    transmission: "Automatic",
-    fuel: "Diesel",
-    location: "Florida",
-  },
-];
 
 const ExploreCars = () => {
   const [search, setSearch] = useState("");
 
-  const filteredCars = cars.filter((car) =>
+  const filteredCars = all_cars.filter((car) =>
     car.name.toLowerCase().includes(search.toLowerCase())
   );
 
@@ -104,27 +28,19 @@ const ExploreCars = () => {
       <div className="max-w-7xl mx-auto px-4 md:px-8">
         
         {/* Page Header */}
-        <div className="text-center mb-12">
-          <span className="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium">
+        <div className="text-center mb-5">
+          <h1 className="text-4xl text-left md:text-5xl font-bold text-gray-900 mt-5">
             Explore Cars
-          </span>
-
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mt-5">
-            Find Your Perfect Ride
           </h1>
-
-          <p className="text-gray-500 mt-4 max-w-2xl mx-auto text-lg">
-            Browse our premium collection of vehicles and book your
-            dream car for your next adventure.
-          </p>
+          <p className="text-gray-700 text-left">Find the prefect car for your next adventure</p>
         </div>
 
         {/* Search & Filter */}
-        <div className="bg-white rounded-2xl shadow-sm p-4 md:p-5 mb-10 flex flex-col lg:flex-row gap-4 items-center justify-between">
+        <div className="text-gray-800 bg-white rounded-2xl shadow-sm p-4 md:p-5 mb-10 flex flex-col lg:flex-row gap-4 items-center justify-between">
           
           {/* Search Input */}
           <div className="relative w-full lg:max-w-md">
-            <FaSearch className="absolute top-1/2 -translate-y-1/2 left-4 text-gray-400" />
+            <FaSearch className="absolute top-1/2 -translate-y-1/2 left-4 text-gray-800" />
 
             <input
               type="text"
@@ -172,7 +88,7 @@ const ExploreCars = () => {
               {/* Image */}
               <div className="relative">
                 <Image 
-                  src={car.image}
+                  src={car.images[0]}
                   alt={car.name}
                   width={500}
                   height={500}
@@ -235,7 +151,7 @@ const ExploreCars = () => {
                 {/* Buttons */}
                 <div className="flex gap-3">
                   <button className="w-full border border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white transition py-3 rounded-xl font-medium">
-                    Details
+                   <Link href={`/cars/${car.id}`}> Details </Link>
                   </button>
 
                   <button className="w-full bg-blue-600 hover:bg-blue-700 transition text-white py-3 rounded-xl font-medium">

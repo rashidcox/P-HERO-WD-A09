@@ -1,4 +1,5 @@
 
+import AddNewCar from '@/components/cards/AddNewCar';
 import React from 'react';
 
 const page = async() => {
@@ -6,7 +7,7 @@ const page = async() => {
 
     return (
         <div>
-            add car
+           <AddNewCar />
         </div>
     );
 };
